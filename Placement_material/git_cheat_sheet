@@ -1,0 +1,19 @@
+1)git is a version control software they are track the all over changes in file
+2) git hub is a hosting service provider
+	
+	Git command 
+	i) git status = git status are use to show the current repository status
+	ii) git init = git init are use to convert the normal folder to git repository
+	iii) git clone = git clone are use to clone the respository in your local machine 
+	     syntax .. git clone --repository--url -- "folderName" where you want to install
+
+	4) git diff = this command are use to track which folder and which line will be and what is changes
+	5) git log = this command are use to haw many commit request and the top log is the latest commit
+	6) git log -p = with the help of we are track and see the wich file are and which line has been changes
+	7) git log --stat = are use to check only which files are changes
+	8) git show shah_id = check to practicular files changes
+	9) git add = are use to track this file
+	10) git commit = are use to commit the file in git repository 
+
+	    git commit -m" " = this -m are use to show the log message
+ 
