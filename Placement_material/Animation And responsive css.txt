@@ -1,0 +1,46 @@
+**********CSS Grid *************
+	grid is collection of two dimensional array
+	flex are use to related the content position 
+	grid are use to bulid a complex layout
+	
+	flexible-gids 
+	 	
+	grid-template-column: 200px 200px 210px;
+		this are use to define how ,many and column and size of the column\
+	grid-template-row : 10px 10px 100px;
+		this are show the how many rows and size of the rows
+	fr : its a fraction unit 
+		if we want to make a resposive grid that timn we use the 
+		fr unit
+		gtr: 1fr 1fr 1fr..
+			jitna bhi apna parent elment hoga uske equally part
+			me devide ho jayega
+	
+	grid-gap : 10 are use to gap between 2 column
+	Grid-area: they are use to extend a block row wise and column wise that why use 
+		   a grid-area;
+	
+
+	gird-template-area= grid template area is the property used to name
+			    the rows and column of a gird and to set its layout
+			    
+	
+	
+	***********Media Queries************
+	media queries
+	
+	*************** Css function *************
+	Variables = are use to avoid repetation of programme
+	--dark-red = blue for declaring a variables
+	and calling time 
+	color = var(--dark-red)
+	:root element are use to declare variable and use globle use
+	
+	Animation are use to gradully change the look
+	Transion in css :: 
+	transiton timing
+	transiton function
+	transition delay
+	transition property
+	
+Questions:== find out difference bet grid and inline grid

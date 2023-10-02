@@ -1,0 +1,43 @@
+CREATE TABLE CUSTOMER(
+    	CustomerId NUMBER(5) PRIMARY KEY,
+        CustomerFirstName varchar(50) not null,
+    	CustomerLastName varchar(50) not null,
+		CustomerAddress varchar(50) not null,
+    	CustomerSubrb varchar(50) null,
+    	CustomerCity varchar(50) not null,
+    	CustomerPostCode char(4) null,
+		CustomerPhoneNumber char(13) null
+    );
+
+create table invetory(
+    InvetoryId number(10) primary key,
+    InventoryName varchar(50) not null,
+    InvetoryDescription varchar(255) null	
+);
+create table employee (
+    EmployeeId number(5) primary key,
+    EmployeeFirstName varchar(50) not null,
+    EmployeeLastName  varchar(50) not null,
+    EmployeeExtension char(4) null
+);
+
+create table sale(
+    SaleId number(4) primary key,
+    CustomerId number(5) not null references customer(CustomerId),
+    InvetoryId number(10) not null references invetory(InvetoryId),
+    EmployeeId number(5) references employee(EmployeeId),
+    SaleDate date not null,
+    SaleQuantity number(4) not null,
+    SaleUnitPrice  number(10,4)  not null
+    
+);
+
+desc customer;
+insert into customer values (1,'Harish','Chaudhari','Nehru Nagar', '','jalgaon','5041','790479279');
+insert into customer values (2,'Sachin','Mali','Mehurun Nagar', 'sachya','jalgaon','5041','790479279');
+insert into customer values (3,'Sagar','Vibhande','Mehrun Nagar', 'Sagar bhau','jalgaon','5041','790479279');
+insert into customer values (4,'Sahil','Pinjari','Nandurabr', 'Manjya bhai','Nandurbar','5041','790479279');
+insert into customer values (5,'Nirmal','Pawar','Pachora', 'nirmya','Pachira','5041','790479279');
+insert into customer values (6,'Lalita','Sonawane','Dhanora', 'dora','Mohadi','5041','790479279');
+
+select * from customer;

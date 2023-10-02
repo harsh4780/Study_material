@@ -1,0 +1,10 @@
+z-index  are used layering of the images
+object-fit= cover ... are use to fit imagge container all sizes cover
+background-attachment : fixed  .. usse imge fix ho jati hai
+filter:  drop-shadow    are add to added shadows  in box
+
+
+questions 
+	difference bet html<img> vs background-imge() 
+
+

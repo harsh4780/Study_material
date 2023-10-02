@@ -1,0 +1,64 @@
+Html=> html is a skelton of webpage, basic building block of web , html is not case sensetive	 
+hyper text =>  
+makup ==> annotation /tags used to show your content description 
+language=> set of rules to build 
+
+Tags =: tags are key word that tell the browser different element ..ex <p> , <img> some other tag
+	<h1> content </h1> .. h1 is tag and all box is called element 
+
+text element = 2 types
+		1)block elemnts : <P> ,<h1>,<u>,<ol> etc..
+		     all the pages are devied in blocks
+		2)inline elements : <i>, <em> ,<strong> 
+		     they are use to differntiate specific part of text 
+
+<DOCTYPE html> = tells the broser the its a Html 5 versiom
+lang ="en" == tels the content of en is all engish
+meta tag = store the information of web pages  
+	   use to specify char set, viewport
+viewport = all the display of device 
+
+			class 2 html
+<a anchor tag> =-read the anchor tag
+<hr> tag = how to color the hr tag
+
+		
+<pre> tag = pre are use to show the all the data as it s
+
+
+table tag=
+	colum group = if style of specfic column that time we use collgroup property
+
+<div> = div tag is generic tag, it s use to divide your web page is different block
+	div is block level element means ,, this are exapnd all over window width
+	if i create a new div he has been come in next line
+	in the div are contain thier display property by default block
+
+
+semantic tag = this tag are tell the browser meaning ful description, ex. <section> <nav>, <head> etc..
+
+<article>  = is a independant tag are use to
+**** imp quetion 1) we can use section tag within a article tag
+		 2) we can also use a article tag in section tag 
+<header>  = wed dock ka introductory  part are include
+
+<footer>  = we use a footer part
+<nav> = is use to navigation tag with the help we navigate the different web pages
+	or link , ita all contain a <a> anchor tag
+
+<aside> tag  = aside tag are use to surroundign data use 
+
+
+
+
+
+
+
+
+
+
+
+
+question 1) can we use multiple header tag in one web page
+	 2) diffrence between <h1> and <header> tag
+	 3) can we use <header>  tag inside a foooter tag 

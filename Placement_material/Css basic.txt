@@ -1,0 +1,196 @@
+Css BAsic 
+	 
+class selectors = comnining a group of selctors and appling the same property 
+		  that time we use class selctors
+id selectors = when u want to indivisually style a specific tag that time we use
+		id selectors .. # symbol are use selecet the id selectors
+element / tag selectors:
+			this selectors are use to tag selectors
+
+psuedo-class selectors = psuedo class is keyword a state that specifies special stae of
+			the selected elemens  exx.. selctors:hover{ ____---}
+
+
+multiple selectors ,or grouping selectors = use for more than one tag are selected
+					  ex.. table , td ,th {  ___   }
+
+specificity
+	is use for whic property are use
+	 tag  << class << id << inline css
+
+box model    padding = conetent and border diffrence 
+	     margin  = diffrence in two elments
+colors in css
+Hexadecemal color = is 6 valiue #______ al value liy bet 00 and FF i collection 
+		    of color Red green blue
+RGB colors  == rgb(0,0,0)
+
+browser color = 140 color are include in css
+
+unit in css 
+pixel value 1/96 inch
+	Absolute unit = all value are fixed or valued pixel is fix
+	.mm  .cm .in .px  
+
+percentage unit = jo bhi apka parent elemnt hoga uska pecentage uspe appl hoti  ahai
+
+relative units = .em .rem  = realative to parent element  if parent font size 16
+		1em = 1*16 = 16
+		2em = 2*16 = 32
+
+realtive viewport = where we are display the content
+		    .vw 1/100 *width of viweport
+		    .vh 1/100 *height of viweport
+
+		**** Gradients ****
+color shifting to one side to another side 	
+
+linear-gradient 
+conical-gradient
+readial-gradient 
+
+		**** Css Shaddow Effects ****
+	text-shadow : 3px        3px     3px   red
+		      hori    verticle  blur  color
+
+	box Sahddow : 3px        3px     3px   red
+		      hori    verticle  blur  color
+	note::-- if we want add box upper  part shadoow that time use negative value
+		       -3px        -3px     3px   red
+		      hori    verticle  blur  color
+
+spred radius ::== 
+	
+			**** Css Dimension Propert ****
+	.max-height: 
+	.min-height: agar content ki sixe jyada hai box se to box grow  kar jayega
+	
+			*****overflow****
+	by default is overflow is visible
+	#overflow : visible
+	#overflow : scroll
+	#overflow : auto
+	
+		
+		***** CSS Position Property ****
+		by default css position property are static
+	.Static = its a by default property .. static means which typw of data
+		  you insert that tuype you show the all over web page
+	.Relative = order depend uppon their actual normal position
+		    .left .right .bottom .top
+	.Fixed:
+			an element with postition : fixed : is positioned relative to the
+			viewport.which means it stay in the same place evrn if the page is
+			scrolled.
+ 				.left .right .bottom .top
+			prpoerty are used to position the element
+	.absolute
+			*An element with position: absolute relative the
+			nearest postion ancestor (insted of postioned relative
+			the viewport like fixed
+			*However, if an absolute position element has no positioned
+			ancestor , it uses the document body, and moves along with 
+			page scrolling
+			*note:: Absolute position elements are moved from the normal flow
+				and can overlap the element
+	.sticky
+
+	          A stick element toggels bet relative and fixed depending
+		 on the scroll postion . it is postined relative until a 
+		 given offeset position is met in the viewport - then
+		 "stick;' in placed
+
+		***** CSS 2d Transform ****
+	CSS transform allow you to move, rotate , scale, ans skew elemetns
+	.translate()   
+		 transform : transalte(10px ,   10px )
+					hori    verti
+			 
+	.rotate()
+		transfrom:rotate(45deg);
+	.scaleX()
+		transform:scale(2      ,    3)
+				hori      verti
+	.scaleY() 
+		
+		transform: skew(20deg);
+			   flat hota hai .. means itallic font type
+		
+	skewy()
+
+			4:10 PM 7/27/2023  **** #3d transform ***
+	if we want to work 3d transform that time we need to on the perspective
+
+		***Flex box***
+	its a one dimensional layout . it makes it easy to align elements
+	on 2D plane is pretty easy to use once ou get familiar with main
+	properties
+			
+steps
+	The first step is to set dislay : flex on a "Container" element the "Children"
+	to the flex container becomes flex items a set of propeties can be applied to 
+	the flex container , and have an effect to all the items as a whole , and a d_
+	ifferent set of propeties can be applied to flex items and have their effect on
+	the targeted items . Flex items can in turn also be flex containers for the ele
+	ments it contains , making it easy to create complex layouts
+
+	
+	**all the inside flext container are called flex item
+	**Horizital axis called is main axix  and by default element is horizontal
+	**VErtical axis  called is cross axis 	
+	****container properties***
+
+	flex-direction
+		flex-direction are used to defime the  diecrtion
+		flex-direction : row   .. items allign in main axis
+		flex-direction : column.. items allign in cross axis
+	        flex-direction : row-reverse .. items allign in main axis in resverse form
+		flex-direction : column-reverse .. items allign in main axis\
+	flex-wrap : if we want exactly width fix that time use flex wrap
+		    agar viewport ki size decrease ho to they adujust their elemnt
+		flex-wrap:wrap  ...
+		flex-n0-wrap .. bydefult value
+		flex-wrap: wrap-reverse ... the elemet are shift in upword dirdction
+	flex-flow its short hand notation it combination of flex direction and flex-wrap
+		flex-flow:row  wrap
+		
+	justify-content: appke main axis ke according item ko align karta hai 
+		justify-content : flex-start all vlued start in left side display
+		justify-content : flex-end valued start in right side display
+		justify-content : center  all element are in center
+		justify-content : space-around   .. all the element are separed in equal form
+				  		only first and last element are place accordingly the size of div
+		
+		justify-content  : space-between  all the element containe same space but first div are contain\
+				  onlu right sight space and last element containe the left side space
+		justify-content  : space-between  all the element containe same space 
+
+
+	align-item ::  In Flexbox, it controls the alignment of items on the Cross Axis. 
+		align-itmes:flex-start all vlued top in left side display
+		align-itmes:flex-start all vlued bottom in left side disp
+		align-itmes  : center  all element are in center in cross-axis
+		align-items : streach  all elmemet stech in vertical form
+	
+	gap: gap are use to space between two or more than two divs
+
+	************* Flex Items properties**************
+	The direct child elements of a flex conctainer automatically become flexible(flex) items
+	
+	order: we want to chage the order....ex we have 4 baox  box 1 ko hum last main dalenge 
+	       by default every div order is 0 corresponding the position we can change
+	       how to use
+		.cl{ order:3}
+	flex-grow: by default value is 0 jis box pe apply karenge wo grow ho jayega 
+	flex-shrink: are use to control a speed of div
+	flex-basis :: are use to define a width of box;
+
+
+
+	
+
+	
+imp question  
+	defference bet 1% and 1vw
+	2) how can we add border using shadoos
+	3)spred radius ::== 
